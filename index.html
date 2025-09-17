@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <title>Editor LCD 16x2</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page">
+    <div class="left">
+      <h1>Editor LCD 16×2</h1>
+      <p class="hint">Clique ou arraste para desenhar. Clique com o botão direito para apagar.</p>
+      <div class="lcd" id="lcd"></div>
+
+      <div class="controls">
+        <button id="copyBtn">Copiar código</button>
+        <button id="clearAllBtn">Limpar tudo</button>
+        <button id="exportBtn">Exportar .txt</button>
+      </div>
+      <p class="note">Dica: você pode arrastar o cursor para desenhar e para apagar.</p>
+    </div>
+
+    <div class="right">
+      <h2>Código gerado</h2>
+      <div id="codigo">// Nenhum caractere desenhado ainda.</div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
